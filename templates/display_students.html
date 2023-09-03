@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Insert_Students</h1>
+
+        <table border="2px">
+            <tr>
+                <th>ScName</th>
+                <th>Sname</th>
+                <th>Sid</th>
+            </tr>
+            {% for sto in QLSTO %}
+            <tr>
+                <td>{{sto.ScName}}</td>
+                <td>{{sto.Sname}}</td>
+                <td>{{sto.Sid}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

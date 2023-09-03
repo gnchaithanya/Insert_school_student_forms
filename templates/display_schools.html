@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_schools</h1>
+        <table border="2px">
+            <tr>
+                <th>ScName</th>
+                <th>ScPrincipal</th>
+                <th>ScLocation</th>
+            </tr>
+
+            {% for so in QLSO %}
+
+            <tr>
+                <td>{{so.ScName}}</td>
+                <td>{{so.ScPrincipal}}</td>
+                <td>{{so.ScLocation}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
